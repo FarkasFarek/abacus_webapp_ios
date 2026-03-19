@@ -6,6 +6,8 @@ struct SettingsView: View {
     @EnvironmentObject var webServer: LocalWebServer
     @State private var showClearAlert = false
     @State private var showSignOutAlert = false
+    @State private var syncStatus = ""
+    @State private var isSyncing = false
     private let service = InventoryService.shared
 
     var body: some View {
@@ -67,6 +69,66 @@ struct SettingsView: View {
                     .background(Color(.systemGray6))
                     .cornerRadius(10)
                     .listRowInsets(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
+                }
+
+                // MARK: - Cloudflare Sync
+                Section {
+                    VStack(spacing: 10) {
+                        HStack {
+                            VStack(alignment: .leading, spacing: 3) {
+                                Text("Cloudflare szinkron").font(.subheadline.bold())
+                                Text("inventory-api.farkascoach.workers.dev")
+                                    .font(.caption).foregroundColor(.secondary)
+                            }
+                            Spacer()
+                            Image(systemName: "checkmark.circle.fill")
+                                .foregroundColor(.green)
+                        }
+
+                        if !syncStatus.isEmpty {
+                            Text(syncStatus)
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+
+                        HStack(spacing: 10) {
+                            Button {
+                                isSyncing = true
+                                syncStatus = "Feltoltes..."
+                                SyncService.shared.pushAll { ok in
+                                    isSyncing = false
+                                    syncStatus = ok ? "Feltoltes sikeres" : "Feltoltes sikertelen"
+                                }
+                            } label: {
+                                Label("Feltoltes", systemImage: "arrow.up.circle.fill")
+                                    .frame(maxWidth: .infinity)
+                            }
+                            .buttonStyle(.bordered)
+                            .tint(.blue)
+                            .disabled(isSyncing)
+
+                            Button {
+                                isSyncing = true
+                                syncStatus = "Letoltes..."
+                                SyncService.shared.pull { ok, p, t in
+                                    isSyncing = false
+                                    syncStatus = ok ? "\(p) termek, \(t) mozgas letoltve" : "Letoltes sikertelen"
+                                }
+                            } label: {
+                                Label("Letoltes", systemImage: "arrow.down.circle.fill")
+                                    .frame(maxWidth: .infinity)
+                            }
+                            .buttonStyle(.bordered)
+                            .tint(.green)
+                            .disabled(isSyncing)
+                        }
+                    }
+                    .padding(.vertical, 4)
+                } header: {
+                    Text("Felhő szinkronizálás")
+                } footer: {
+                    Text("Az adatok automatikusan feltoltodnek minden mentesnel. Kezzel is szinkronizalhatsz.")
                 }
 
                 // MARK: - Web szerver

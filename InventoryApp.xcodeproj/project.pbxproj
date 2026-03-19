@@ -33,6 +33,7 @@
 		981EA3682F6C174200FBD143 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3452F6C174200FBD143 /* DashboardView.swift */; };
 		981EA36A2F6C174200FBD143 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA32C2F6C174200FBD143 /* PersistenceController.swift */; };
 		981EA36B2F6C174200FBD143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 981EA3272F6C174200FBD143 /* Assets.xcassets */; };
+		98BBBFE02F6C24D200246990 /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BBBFDF2F6C24D200246990 /* SyncService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		981EA3492F6C174200FBD143 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		981EA34B2F6C174200FBD143 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		981EA34D2F6C174200FBD143 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		98BBBFDF2F6C24D200246990 /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
 		EPROD /* InventoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 		981EA3332F6C174200FBD143 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				98BBBFDF2F6C24D200246990 /* SyncService.swift */,
 				981EA32E2F6C174200FBD143 /* AuthService.swift */,
 				981EA32F2F6C174200FBD143 /* ExportService.swift */,
 				981EA3302F6C174200FBD143 /* InventoryService.swift */,
@@ -286,6 +289,7 @@
 				981EA3502F6C174200FBD143 /* CoreDataEntities.swift in Sources */,
 				981EA3512F6C174200FBD143 /* ExportService.swift in Sources */,
 				981EA3522F6C174200FBD143 /* ProductListView.swift in Sources */,
+				98BBBFE02F6C24D200246990 /* SyncService.swift in Sources */,
 				981EA3532F6C174200FBD143 /* QRScannerViewController.swift in Sources */,
 				981EA3542F6C174200FBD143 /* ReportsView.swift in Sources */,
 				981EA3552F6C174200FBD143 /* SettingsView.swift in Sources */,

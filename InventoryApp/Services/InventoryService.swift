@@ -50,6 +50,7 @@ class InventoryService {
         p.note = note
         p.createdAt = Date()
         PersistenceController.shared.save()
+        SyncService.shared.pushProduct(p)
         return p
     }
 
@@ -66,6 +67,7 @@ class InventoryService {
         product.location = location
         product.note = note
         PersistenceController.shared.save()
+        SyncService.shared.pushProduct(product)
     }
 
     func deleteProduct(_ product: ProductEntity) {
@@ -97,6 +99,8 @@ class InventoryService {
         }
         tx.stockAfter = product.currentStock
         PersistenceController.shared.save()
+        SyncService.shared.pushProduct(product)
+        SyncService.shared.pushTransaction(tx)
     }
 
     func fetchTransactions(for product: ProductEntity? = nil, limit: Int = 100) -> [TransactionEntity] {

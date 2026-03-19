@@ -1,0 +1,9 @@
+name = "inventory-api"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+account_id = "9abe7429e4b2ed0cf3e11a2a7fd156d2"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "inventory-db"
+database_id = "34b64899-fb4c-4965-9b81-e30be6daa9c5"
