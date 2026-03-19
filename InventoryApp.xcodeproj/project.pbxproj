@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		981EA34F2F6C174200FBD143 /* QRCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3322F6C174200FBD143 /* QRCodeService.swift */; };
+		981EA3502F6C174200FBD143 /* CoreDataEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA32B2F6C174200FBD143 /* CoreDataEntities.swift */; };
+		981EA3512F6C174200FBD143 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA32F2F6C174200FBD143 /* ExportService.swift */; };
+		981EA3522F6C174200FBD143 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3432F6C174200FBD143 /* ProductListView.swift */; };
+		981EA3532F6C174200FBD143 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3482F6C174200FBD143 /* QRScannerViewController.swift */; };
+		981EA3542F6C174200FBD143 /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3462F6C174200FBD143 /* ReportsView.swift */; };
+		981EA3552F6C174200FBD143 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA34B2F6C174200FBD143 /* SettingsView.swift */; };
+		981EA3562F6C174200FBD143 /* QRPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA33A2F6C174200FBD143 /* QRPreviewView.swift */; };
+		981EA3572F6C174200FBD143 /* QuantityInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA33E2F6C174200FBD143 /* QuantityInputView.swift */; };
+		981EA3582F6C174200FBD143 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3352F6C174200FBD143 /* ScannerViewModel.swift */; };
+		981EA3592F6C174200FBD143 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA34D2F6C174200FBD143 /* MainTabView.swift */; };
+		981EA35A2F6C174200FBD143 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3372F6C174200FBD143 /* LoginView.swift */; };
+		981EA35B2F6C174200FBD143 /* InventoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3302F6C174200FBD143 /* InventoryService.swift */; };
+		981EA35C2F6C174200FBD143 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA33F2F6C174200FBD143 /* TransactionListView.swift */; };
+		981EA35D2F6C174200FBD143 /* InventoryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3282F6C174200FBD143 /* InventoryAppApp.swift */; };
+		981EA35E2F6C174200FBD143 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA32E2F6C174200FBD143 /* AuthService.swift */; };
+		981EA3612F6C174200FBD143 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3422F6C174200FBD143 /* ProductDetailView.swift */; };
+		981EA3622F6C174200FBD143 /* LocalWebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3312F6C174200FBD143 /* LocalWebServer.swift */; };
+		981EA3632F6C174200FBD143 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3492F6C174200FBD143 /* ScannerView.swift */; };
+		981EA3642F6C174200FBD143 /* QRGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3392F6C174200FBD143 /* QRGeneratorView.swift */; };
+		981EA3652F6C174200FBD143 /* TokenPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA33B2F6C174200FBD143 /* TokenPopupView.swift */; };
+		981EA3662F6C174200FBD143 /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3412F6C174200FBD143 /* AddProductView.swift */; };
+		981EA3672F6C174200FBD143 /* InventoryListCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA33D2F6C174200FBD143 /* InventoryListCountView.swift */; };
+		981EA3682F6C174200FBD143 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA3452F6C174200FBD143 /* DashboardView.swift */; };
+		981EA36A2F6C174200FBD143 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EA32C2F6C174200FBD143 /* PersistenceController.swift */; };
+		981EA36B2F6C174200FBD143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 981EA3272F6C174200FBD143 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		981EA3272F6C174200FBD143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		981EA3282F6C174200FBD143 /* InventoryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryAppApp.swift; sourceTree = "<group>"; };
+		981EA32B2F6C174200FBD143 /* CoreDataEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataEntities.swift; sourceTree = "<group>"; };
+		981EA32C2F6C174200FBD143 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		981EA32E2F6C174200FBD143 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		981EA32F2F6C174200FBD143 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		981EA3302F6C174200FBD143 /* InventoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryService.swift; sourceTree = "<group>"; };
+		981EA3312F6C174200FBD143 /* LocalWebServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWebServer.swift; sourceTree = "<group>"; };
+		981EA3322F6C174200FBD143 /* QRCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeService.swift; sourceTree = "<group>"; };
+		981EA3352F6C174200FBD143 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		981EA3372F6C174200FBD143 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		981EA3392F6C174200FBD143 /* QRGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGeneratorView.swift; sourceTree = "<group>"; };
+		981EA33A2F6C174200FBD143 /* QRPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRPreviewView.swift; sourceTree = "<group>"; };
+		981EA33B2F6C174200FBD143 /* TokenPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenPopupView.swift; sourceTree = "<group>"; };
+		981EA33D2F6C174200FBD143 /* InventoryListCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListCountView.swift; sourceTree = "<group>"; };
+		981EA33E2F6C174200FBD143 /* QuantityInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityInputView.swift; sourceTree = "<group>"; };
+		981EA33F2F6C174200FBD143 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		981EA3412F6C174200FBD143 /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
+		981EA3422F6C174200FBD143 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		981EA3432F6C174200FBD143 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		981EA3452F6C174200FBD143 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		981EA3462F6C174200FBD143 /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
+		981EA3482F6C174200FBD143 /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		981EA3492F6C174200FBD143 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		981EA34B2F6C174200FBD143 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		981EA34D2F6C174200FBD143 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		EPROD /* InventoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		PHFW /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		981EA32D2F6C174200FBD143 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				981EA32B2F6C174200FBD143 /* CoreDataEntities.swift */,
+				981EA32C2F6C174200FBD143 /* PersistenceController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		981EA3332F6C174200FBD143 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				981EA32E2F6C174200FBD143 /* AuthService.swift */,
+				981EA32F2F6C174200FBD143 /* ExportService.swift */,
+				981EA3302F6C174200FBD143 /* InventoryService.swift */,
+				981EA3312F6C174200FBD143 /* LocalWebServer.swift */,
+				981EA3322F6C174200FBD143 /* QRCodeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		981EA3362F6C174200FBD143 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				981EA3352F6C174200FBD143 /* ScannerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		981EA3382F6C174200FBD143 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				981EA3372F6C174200FBD143 /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		981EA33C2F6C174200FBD143 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				981EA3392F6C174200FBD143 /* QRGeneratorView.swift */,
+				981EA33A2F6C174200FBD143 /* QRPreviewView.swift */,
+				981EA33B2F6C174200FBD143 /* TokenPopupView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		981EA3402F6C174200FBD143 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				981EA33D2F6C174200FBD143 /* InventoryListCountView.swift */,
+				981EA33E2F6C174200FBD143 /* QuantityInputView.swift */,
+				981EA33F2F6C174200FBD143 /* TransactionListView.swift */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
+		981EA3442F6C174200FBD143 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				981EA3412F6C174200FBD143 /* AddProductView.swift */,
+				981EA3422F6C174200FBD143 /* ProductDetailView.swift */,
+				981EA3432F6C174200FBD143 /* ProductListView.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		981EA3472F6C174200FBD143 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				981EA3452F6C174200FBD143 /* DashboardView.swift */,
+				981EA3462F6C174200FBD143 /* ReportsView.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		981EA34A2F6C174200FBD143 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				981EA3482F6C174200FBD143 /* QRScannerViewController.swift */,
+				981EA3492F6C174200FBD143 /* ScannerView.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		981EA34C2F6C174200FBD143 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				981EA34B2F6C174200FBD143 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		981EA34E2F6C174200FBD143 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				981EA3382F6C174200FBD143 /* Auth */,
+				981EA33C2F6C174200FBD143 /* Components */,
+				981EA3402F6C174200FBD143 /* Inventory */,
+				981EA3442F6C174200FBD143 /* Products */,
+				981EA3472F6C174200FBD143 /* Reports */,
+				981EA34A2F6C174200FBD143 /* Scanner */,
+				981EA34C2F6C174200FBD143 /* Settings */,
+				981EA34D2F6C174200FBD143 /* MainTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		GMAIN /* InventoryApp */ = {
+			isa = PBXGroup;
+			children = (
+				981EA3272F6C174200FBD143 /* Assets.xcassets */,
+				981EA3282F6C174200FBD143 /* InventoryAppApp.swift */,
+				981EA32D2F6C174200FBD143 /* Models */,
+				981EA3332F6C174200FBD143 /* Services */,
+				981EA3362F6C174200FBD143 /* ViewModels */,
+				981EA34E2F6C174200FBD143 /* Views */,
+			);
+			path = InventoryApp;
+			sourceTree = "<group>";
+		};
+		GPROD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EPROD /* InventoryApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		GROOT = {
+			isa = PBXGroup;
+			children = (
+				GMAIN /* InventoryApp */,
+				GPROD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TGT1 /* InventoryApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCL1 /* Build configuration list for PBXNativeTarget "InventoryApp" */;
+			buildPhases = (
+				PHSRC /* Sources */,
+				PHFW /* Frameworks */,
+				PHRES /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InventoryApp;
+			productName = InventoryApp;
+			productReference = EPROD /* InventoryApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PROJ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					TGT1 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = BCL0 /* Build configuration list for PBXProject "InventoryApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = GROOT;
+			productRefGroup = GPROD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TGT1 /* InventoryApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		PHRES /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981EA36B2F6C174200FBD143 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		PHSRC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981EA34F2F6C174200FBD143 /* QRCodeService.swift in Sources */,
+				981EA3502F6C174200FBD143 /* CoreDataEntities.swift in Sources */,
+				981EA3512F6C174200FBD143 /* ExportService.swift in Sources */,
+				981EA3522F6C174200FBD143 /* ProductListView.swift in Sources */,
+				981EA3532F6C174200FBD143 /* QRScannerViewController.swift in Sources */,
+				981EA3542F6C174200FBD143 /* ReportsView.swift in Sources */,
+				981EA3552F6C174200FBD143 /* SettingsView.swift in Sources */,
+				981EA3562F6C174200FBD143 /* QRPreviewView.swift in Sources */,
+				981EA3572F6C174200FBD143 /* QuantityInputView.swift in Sources */,
+				981EA3582F6C174200FBD143 /* ScannerViewModel.swift in Sources */,
+				981EA3592F6C174200FBD143 /* MainTabView.swift in Sources */,
+				981EA35A2F6C174200FBD143 /* LoginView.swift in Sources */,
+				981EA35B2F6C174200FBD143 /* InventoryService.swift in Sources */,
+				981EA35C2F6C174200FBD143 /* TransactionListView.swift in Sources */,
+				981EA35D2F6C174200FBD143 /* InventoryAppApp.swift in Sources */,
+				981EA35E2F6C174200FBD143 /* AuthService.swift in Sources */,
+				981EA3612F6C174200FBD143 /* ProductDetailView.swift in Sources */,
+				981EA3622F6C174200FBD143 /* LocalWebServer.swift in Sources */,
+				981EA3632F6C174200FBD143 /* ScannerView.swift in Sources */,
+				981EA3642F6C174200FBD143 /* QRGeneratorView.swift in Sources */,
+				981EA3652F6C174200FBD143 /* TokenPopupView.swift in Sources */,
+				981EA3662F6C174200FBD143 /* AddProductView.swift in Sources */,
+				981EA3672F6C174200FBD143 /* InventoryListCountView.swift in Sources */,
+				981EA3682F6C174200FBD143 /* DashboardView.swift in Sources */,
+				981EA36A2F6C174200FBD143 /* PersistenceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BC01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				NEW_SETTING = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				NEW_SETTING = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G2YB58627T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "A kamera szukseges a QR-kodok beolvasasahoz.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiqrinventory.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G2YB58627T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "A kamera szukseges a QR-kodok beolvasasahoz.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiqrinventory.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCL0 /* Build configuration list for PBXProject "InventoryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01 /* Debug */,
+				BC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCL1 /* Build configuration list for PBXNativeTarget "InventoryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC03 /* Debug */,
+				BC04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PROJ /* Project object */;
+}
